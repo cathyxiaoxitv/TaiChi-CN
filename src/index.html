@@ -14,47 +14,6 @@
     <div id="div1Wrapper">
         <div id="div1"></div>
     </div>
-    <style>
-        *{margin:0;padding: 0;}
-        *,*::before,*::after{
-            box-sizing: border-box;
-        }
-        /* *选择器是不包含伪元素的*/
-        #html{
-            word-break: break-all;
-        }
-        #div1{
-            position: fixed;
-            left:50%;
-            transform: translateX(-50%);
-            top:20px;
-        }
-        #div1::before{
-            position: absolute;
-            content: '';
-            display: block;
-        }
-        #div1::after{
-            position: absolute;
-            content: '';
-            display: block;
-        }
-        @media (max-width:500px) {
-            #html{
-                height:50vh;
-                overflow: auto;
-                /*容器高度设置了50vh，内容太长就会溢出容器，设置为auto，显示滚动条*/
-        }
-            #div1{
-                position: relative;
-                margin: auto;
-            }
-            #div1Wrapper{
-                height: 50vh;
-                display: flex;
-            }
-        }
-    </style>
-    <script src="main.js"></script>
+     <script src="main.js"></script>
 </body>
 </html>
